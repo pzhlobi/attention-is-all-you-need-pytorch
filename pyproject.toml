@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "attention-is-all-you-need-pytorch"
+version = "0.1.0"
+description = ""
+authors = ["pzhlobi <pavel.zhlobich@gsacapital.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+dill = "0.3.7"
+msgpack-numpy = "0.4.8"
+msgpack-python = "0.5.6"
+torch = {version = "2.0.1+cpu", source = "pytorch-cpu"}
+numpy="1.23.3"
+spacy = "3.6.1"
+tensorboard = "2.13.0"
+tensorflow = "2.13.0"
+terminado = "0.17.1"
+tqdm = "4.66.1"
+
+
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
